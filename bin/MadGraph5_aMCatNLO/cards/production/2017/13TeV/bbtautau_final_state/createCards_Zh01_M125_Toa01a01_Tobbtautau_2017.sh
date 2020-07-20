@@ -1,4 +1,4 @@
-masspoints=(15 30 45 50 60)
+masspoints=(12 15 20 25 30 35 40 45 50 55 60)
 
 template_dir="Zh01_M125_Toa01a01_Tobbtautau/" 
 
