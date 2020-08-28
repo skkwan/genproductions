@@ -23,7 +23,7 @@ cd genproductions/bin/MadGraph5_aMCatNLO/
 cd cards/production/2017/13TeV/bbtautau_final_state/
 ```
 
-```
+``
 bash createCards_ggh01_M125_Toa01a01_Tobbtautau_2017.sh
 bash createCards_vbfh01_M125_Toa01a01_Tobbtautau_2017.sh
 bash createCards_Wh01_M125_Toa01a01_Tobbtautau_2017.sh
@@ -62,20 +62,11 @@ source createCards_Zh03_M125_Toh01h02.sh
 For **cascade** scenarios (M2 > 2 M1), type the mass points into `cascadeMassPoints.txt`,
 and create the datacards like so (only WH and ZH shown):
 ```
-source createCards_Wh03_M125_Toh01h02_h02_Toh01h01.sh
-source createCards_Zh03_M125_Toh01h02_h02_Toh01h01.sh
+createCards_Wh03_M125_Toh01h02_h02_Toh01h01.sh
+createCards_Zh03_M125_Toh01h02_h02_Toh01h01.sh
 ```
 
 The output datacards are in `Wh03_M125_Toh01h02/cascades` and `Wh03_M125_Toh01h02/no-cascades` etc.
 
 
-### Generate a gridpack 
-
-First, navigate to `genproductions/bin/MadGraph5_aMCatNLO/`, and run the scripts:
-
-```
-source generate_gridpacks_Wh3_M125_Toh1h2_2017.sh
-generate_gridpacks_Zh3_M125_Toh1h2_2017.sh
-```
-
-I had to manually move the resulting gridpacks to a more organized folder structure (a `gridpacks/` directory)
+### Generate a gridpack (work in progress)
