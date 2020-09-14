@@ -79,3 +79,15 @@ generate_gridpacks_Zh3_M125_Toh1h2_2017.sh
 ```
 
 I had to manually move the resulting gridpacks to a more organized folder structure (a `gridpacks/` directory)
+
+### Validate the gridpacks
+
+Run
+```
+source validate_gridpacks_2016_WH.sh
+```
+
+This will save all the .lhe files to a `lheFiles/` directory; afterwards, enter this directory and pipe the 10 lines after `Events` into a text file to quickly see the relevant lines:
+```
+grep -A 10 '<event>' *.lhe > summary.txt
+```
